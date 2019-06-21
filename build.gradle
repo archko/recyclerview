@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+        google()
+        jcenter()
+        mavenCentral()
+    }
+	
+    dependencies {
+        classpath "com.android.tools.build:gradle:${GRADLE_PLUGIN_VERSION}"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
+        google()
+        jcenter()
+        mavenCentral()
+        // 引入AAR
+        flatDir {
+            List<String> dirs = new ArrayList<>()
+            rootProject.subprojects.each {
+                dirs.add(it.projectDir.absolutePath + "/aars")
+                dirs.add(it.projectDir.absolutePath + "/libs")
+            }
+            dir dirs
+        }
+    }
+}

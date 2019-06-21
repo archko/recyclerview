@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    api fileTree(include: '*.jar', dir: 'libs')
+    api "com.android.support:recyclerview-v7:${SUPPORT_LIB_VERSION}"
+    api "com.android.support:design:${SUPPORT_LIB_VERSION}"
+    api "com.android.support.constraint:constraint-layout:${CONSTRAINT_LAYOUT_VERSION}"
+    api 'com.liaoinstan.springview:library:1.2.6'
+}
+
+android {
+    compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION as int
+        // Enabling multidex support.
+        multiDexEnabled true
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
