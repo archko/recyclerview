@@ -1,6 +1,7 @@
 package cn.archko.test.layoutmanager;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -70,6 +71,7 @@ public class TestLayoutManager extends RecyclerView.LayoutManager {
 
         // 平移容器内的item
         offsetChildrenVertical(-travel);
+        Log.d("--->", " childView count:" + getChildCount());
         return travel;
     }
 

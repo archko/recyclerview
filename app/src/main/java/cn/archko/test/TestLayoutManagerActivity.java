@@ -18,13 +18,11 @@ import cn.archko.test.custom.CircleZoomLayoutManager;
 import cn.archko.test.custom.GalleryLayoutManager;
 import cn.archko.test.custom.ScrollZoomLayoutManager;
 import cn.archko.test.layoutmanager.CardLayoutManager;
-import cn.archko.test.layoutmanager.CoverFlowLayoutManger;
 import cn.archko.test.layoutmanager.CustomLayoutManager;
 import cn.archko.test.layoutmanager.FlowLayoutManager;
 import cn.archko.test.layoutmanager.HiveLayoutManager;
 import cn.archko.test.layoutmanager.RollingLayoutManager;
 import cn.archko.test.layoutmanager.SmartLayoutManager;
-import cn.archko.test.layoutmanager.SuitedLayoutManager;
 import cn.archko.test.layoutmanager.TableLayoutManager;
 import cn.archko.test.layoutmanager.TestLayoutManager;
 
@@ -81,8 +79,6 @@ public class TestLayoutManagerActivity extends FragmentActivity {
         //bean = new Bean(LAYOUT_SUITED, SuitedLayoutManager.class.getSimpleName());
         //list.add(bean);
         bean = new Bean(LAYOUT_CUSTOM, CustomLayoutManager.class.getSimpleName());
-        list.add(bean);
-        bean = new Bean(LAYOUT_CIRCLE, CustomLayoutManager.class.getSimpleName());
         list.add(bean);
         bean = new Bean(LAYOUT_CIRCLE_ZOOM, CircleZoomLayoutManager.class.getSimpleName());
         list.add(bean);
