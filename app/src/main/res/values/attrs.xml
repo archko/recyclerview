@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ZoomImageView">
+        <attr name="zoomImage_zoomable" format="boolean" />
+        <attr name="zoomImage_translatable" format="boolean"/>
+        <attr name="zoomImage_restrictBounds" format="boolean"/>
+        <attr name="zoomImage_animateOnReset" format="boolean"/>
+        <attr name="zoomImage_doubleTapToZoom" format="boolean"/>
+        <attr name="zoomImage_doubleTapToZoomScaleFactor" format="float"/>
+        <attr name="zoomImage_autoCenter" format="boolean"/>
+        <attr name="zoomImage_minScale" format="float"/>
+        <attr name="zoomImage_maxScale" format="float"/>
+    </declare-styleable>
+
+    <attr name="crop_line_color" format="color"/>
+    <attr name="crop_shadow_color" format="color"/>
+    <attr name="crop_corner_color" format="color"/>
+    <attr name="crop_dot_color" format="color"/>
+
+    <attr name="crop_line_width" format="dimension"/>
+    <attr name="crop_corner_length" format="dimension"/>
+    <attr name="crop_corner_width" format="dimension"/>
+    <attr name="crop_min_length" format="dimension"/>
+
+    <declare-styleable name="CropVideoView">
+
+        <attr name="guidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+
+    </declare-styleable>
+</resources>
