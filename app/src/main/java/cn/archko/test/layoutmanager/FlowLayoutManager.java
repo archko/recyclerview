@@ -1,11 +1,12 @@
 package cn.archko.test.layoutmanager;
 
 import android.graphics.Rect;
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.util.SparseBooleanArray;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @author: wushuyong 2019/6/20 :10:09

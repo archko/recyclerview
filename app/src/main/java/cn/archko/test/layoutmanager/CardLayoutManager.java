@@ -1,10 +1,11 @@
 package cn.archko.test.layoutmanager;
 
 import android.graphics.Rect;
-import android.support.v4.util.SparseArrayCompat;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.collection.SparseArrayCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by qibin on 16-9-25.

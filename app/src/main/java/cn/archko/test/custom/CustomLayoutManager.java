@@ -3,10 +3,11 @@ package cn.archko.test.custom;
 import android.content.Context;
 import android.graphics.PointF;
 import android.os.Parcelable;
-import android.support.v7.widget.LinearSmoothScroller;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.LinearSmoothScroller;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @author: wushuyong 2019/6/20 :15:22

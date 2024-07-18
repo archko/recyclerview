@@ -1,8 +1,9 @@
 package cn.archko.test.card;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * https://github.com/tuacy/LayoutManagerDemo/blob/master/app/src/main/java/com/tuacy/layoutmanagerdemo/card/CardBean.java

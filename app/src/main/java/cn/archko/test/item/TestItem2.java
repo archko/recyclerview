@@ -1,11 +1,11 @@
 package cn.archko.test.item;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import cn.archko.test.BaseViewHolder;
 import cn.archko.test.R;
 

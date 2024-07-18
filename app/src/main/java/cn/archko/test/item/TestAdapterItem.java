@@ -1,9 +1,9 @@
 package cn.archko.test.item;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
 import cn.archko.test.BaseViewHolder;
 import cn.archko.test.R;
 import cn.archko.test.TestViewHolder;

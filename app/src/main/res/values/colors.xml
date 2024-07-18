@@ -1,20 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-Copyright 2017 Google Inc. All rights reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!--    for windowbackgroudn -->
+    <color name="colorPrimary">#242427</color>
+    <!--navigation, -->
+    <color name="colorPrimaryVariantDark">#161616</color>
+    <!--    item recyclerview, background button-->
+    <color name="colorPrimaryVariant">#2196F3</color>
+    <color name="colorOnPrimary">#d3d3d3</color>
+    <color name="colorPrimaryDark">#5896FD</color>
+    <color name="colorAccent">#5896FD</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#2196F3</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="progress_color">#FF3700B3</color>
+    <color name="color_splash">#FFFFFF</color>
+    <color name="gray">#B6B6B6</color>
+
+    <color name="white_translucent">#AAFFFFFF</color>
+    <color name="black_translucent">#B0000000</color>
+    <color name="bg_translucent">#88000000</color>
+
+    <color name="border">@color/white_translucent</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="corner">@android:color/white</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+
+    <color name="bottom_bar_background">#77000000</color>
 </resources>

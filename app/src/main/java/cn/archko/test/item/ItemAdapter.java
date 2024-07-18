@@ -1,12 +1,12 @@
 package cn.archko.test.item;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import cn.archko.test.BaseRecyclerAdapter;
 import cn.archko.test.BaseViewHolder;
 

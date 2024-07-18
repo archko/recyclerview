@@ -2,11 +2,6 @@ package cn.archko.test;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -14,6 +9,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import cn.archko.test.custom.CircleZoomLayoutManager;
 import cn.archko.test.custom.GalleryLayoutManager;
 import cn.archko.test.custom.ScrollZoomLayoutManager;
@@ -29,7 +29,7 @@ import cn.archko.test.layoutmanager.TestLayoutManager;
 /**
  * @author: wushuyong 2018/12/27 :14:03
  */
-public class TestLayoutManagerActivity extends FragmentActivity {
+public class TestLayoutManagerActivity extends AppCompatActivity {
 
     public static final int LAYOUT_TEST = 0;
     public static final int LAYOUT_FLOW = 1;

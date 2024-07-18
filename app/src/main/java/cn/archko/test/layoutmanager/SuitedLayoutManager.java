@@ -1,9 +1,10 @@
 package cn.archko.test.layoutmanager;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @author: wushuyong 2019/6/20 :10:14

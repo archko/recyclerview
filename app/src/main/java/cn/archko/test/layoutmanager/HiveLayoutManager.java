@@ -3,7 +3,6 @@ package cn.archko.test.layoutmanager;
 import android.content.Context;
 import android.graphics.PointF;
 import android.graphics.RectF;
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.util.SparseBooleanArray;
 import android.view.View;
@@ -11,6 +10,8 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * @author: wushuyong 2019/6/20 :10:05
@@ -127,7 +128,7 @@ public class HiveLayoutManager extends RecyclerView.LayoutManager {
                 mState.mViewRect.offset(0, -diff);
                 mState.mOffsetY -= diff;
                 mState.mLastOffsetY = 0;
-            }else {
+            } else {
                 mState.mViewRect.offset(0, -mState.mOffsetY);
                 mState.mOffsetY = 0;
                 mState.mLastOffsetY = 0;
