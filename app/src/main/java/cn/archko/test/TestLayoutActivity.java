@@ -2,6 +2,16 @@ package cn.archko.test;
 
 import android.os.Bundle;
 
+import cn.archko.test.series.LinearLayoutManager1;
+import cn.archko.test.series.LinearLayoutManager2;
+import cn.archko.test.series.LinearLayoutManager3;
+import cn.archko.test.series.LinearLayoutManager4;
+import cn.archko.test.series.LinearLayoutManager5;
+import cn.archko.test.series.LinearLayoutManager6;
+import cn.archko.test.series.LinearLayoutManager7;
+import cn.archko.test.series.MostSimpleLayoutManager;
+import cn.archko.test.series.MyLinearLayoutManager;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,13 +31,11 @@ import cn.archko.test.item.TestBean;
 import cn.archko.test.item.TestItem;
 import cn.archko.test.item.TestItem2;
 import cn.archko.test.layoutmanager.CardLayoutManager;
-import cn.archko.test.layoutmanager.CoverFlowLayoutManger;
 import cn.archko.test.layoutmanager.CustomLayoutManager;
 import cn.archko.test.layoutmanager.FlowLayoutManager;
 import cn.archko.test.layoutmanager.HiveLayoutManager;
 import cn.archko.test.layoutmanager.RollingLayoutManager;
 import cn.archko.test.layoutmanager.SmartLayoutManager;
-import cn.archko.test.layoutmanager.SuitedLayoutManager;
 import cn.archko.test.layoutmanager.TestLayoutManager;
 
 /**
@@ -92,6 +100,42 @@ public class TestLayoutActivity extends AppCompatActivity {
             }
             case TestLayoutManagerActivity.LAYOUT_CARD: {
                 recyclerView.setLayoutManager(new CardLayoutManager(true));
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_1: {
+                recyclerView.setLayoutManager(new LinearLayoutManager1());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_2: {
+                recyclerView.setLayoutManager(new LinearLayoutManager2());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_3: {
+                recyclerView.setLayoutManager(new LinearLayoutManager3());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_4: {
+                recyclerView.setLayoutManager(new LinearLayoutManager4());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_5: {
+                recyclerView.setLayoutManager(new LinearLayoutManager5());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_6: {
+                recyclerView.setLayoutManager(new LinearLayoutManager6());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_7: {
+                recyclerView.setLayoutManager(new LinearLayoutManager7());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_SIMPLE: {
+                recyclerView.setLayoutManager(new MostSimpleLayoutManager());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_MY: {
+                recyclerView.setLayoutManager(new MyLinearLayoutManager());
                 break;
             }
         }

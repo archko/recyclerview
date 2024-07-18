@@ -25,6 +25,15 @@ import cn.archko.test.layoutmanager.RollingLayoutManager;
 import cn.archko.test.layoutmanager.SmartLayoutManager;
 import cn.archko.test.layoutmanager.TableLayoutManager;
 import cn.archko.test.layoutmanager.TestLayoutManager;
+import cn.archko.test.series.LinearLayoutManager1;
+import cn.archko.test.series.LinearLayoutManager2;
+import cn.archko.test.series.LinearLayoutManager3;
+import cn.archko.test.series.LinearLayoutManager4;
+import cn.archko.test.series.LinearLayoutManager5;
+import cn.archko.test.series.LinearLayoutManager6;
+import cn.archko.test.series.LinearLayoutManager7;
+import cn.archko.test.series.MostSimpleLayoutManager;
+import cn.archko.test.series.MyLinearLayoutManager;
 
 /**
  * @author: wushuyong 2018/12/27 :14:03
@@ -45,6 +54,15 @@ public class TestLayoutManagerActivity extends AppCompatActivity {
     public static final int LAYOUT_SCROLLZOOM = 11;
     public static final int LAYOUT_CARD = 12;
     public static final int LAYOUT_TABLE = 13;
+    public static final int LAYOUT_1 = 14;
+    public static final int LAYOUT_2 = 15;
+    public static final int LAYOUT_3 = 16;
+    public static final int LAYOUT_4 = 17;
+    public static final int LAYOUT_5 = 18;
+    public static final int LAYOUT_6 = 19;
+    public static final int LAYOUT_7 = 20;
+    public static final int LAYOUT_SIMPLE = 21;
+    public static final int LAYOUT_MY = 22;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -88,8 +106,25 @@ public class TestLayoutManagerActivity extends AppCompatActivity {
         list.add(bean);
         bean = new Bean(LAYOUT_CARD, CardLayoutManager.class.getSimpleName());
         list.add(bean);
-        bean = new Bean(LAYOUT_TABLE, TableLayoutManager.class.getSimpleName());
+        bean = new Bean(LAYOUT_1, LinearLayoutManager1.class.getSimpleName());
         list.add(bean);
+        bean = new Bean(LAYOUT_2, LinearLayoutManager2.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_3, LinearLayoutManager3.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_4, LinearLayoutManager4.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_5, LinearLayoutManager5.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_6, LinearLayoutManager6.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_7, LinearLayoutManager7.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_SIMPLE, MostSimpleLayoutManager.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_MY, MyLinearLayoutManager.class.getSimpleName());
+        list.add(bean);
+
         adapter.setData(list);
         adapter.notifyDataSetChanged();
     }
