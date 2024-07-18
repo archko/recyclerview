@@ -2,6 +2,7 @@ package cn.archko.test;
 
 import android.os.Bundle;
 
+import cn.archko.test.layoutmanager.ZoomRecyclerLayout;
 import cn.archko.test.series.LinearLayoutManager1;
 import cn.archko.test.series.LinearLayoutManager2;
 import cn.archko.test.series.LinearLayoutManager3;
@@ -136,6 +137,10 @@ public class TestLayoutActivity extends AppCompatActivity {
             }
             case TestLayoutManagerActivity.LAYOUT_MY: {
                 recyclerView.setLayoutManager(new MyLinearLayoutManager());
+                break;
+            }
+            case TestLayoutManagerActivity.LAYOUT_ZOOM: {
+                recyclerView.setLayoutManager(new ZoomRecyclerLayout(this));
                 break;
             }
         }

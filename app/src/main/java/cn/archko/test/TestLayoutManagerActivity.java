@@ -25,6 +25,7 @@ import cn.archko.test.layoutmanager.RollingLayoutManager;
 import cn.archko.test.layoutmanager.SmartLayoutManager;
 import cn.archko.test.layoutmanager.TableLayoutManager;
 import cn.archko.test.layoutmanager.TestLayoutManager;
+import cn.archko.test.layoutmanager.ZoomRecyclerLayout;
 import cn.archko.test.series.LinearLayoutManager1;
 import cn.archko.test.series.LinearLayoutManager2;
 import cn.archko.test.series.LinearLayoutManager3;
@@ -63,6 +64,7 @@ public class TestLayoutManagerActivity extends AppCompatActivity {
     public static final int LAYOUT_7 = 20;
     public static final int LAYOUT_SIMPLE = 21;
     public static final int LAYOUT_MY = 22;
+    public static final int LAYOUT_ZOOM = 23;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -123,6 +125,8 @@ public class TestLayoutManagerActivity extends AppCompatActivity {
         bean = new Bean(LAYOUT_SIMPLE, MostSimpleLayoutManager.class.getSimpleName());
         list.add(bean);
         bean = new Bean(LAYOUT_MY, MyLinearLayoutManager.class.getSimpleName());
+        list.add(bean);
+        bean = new Bean(LAYOUT_ZOOM, ZoomRecyclerLayout.class.getSimpleName());
         list.add(bean);
 
         adapter.setData(list);
